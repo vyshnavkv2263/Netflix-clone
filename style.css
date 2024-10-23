@@ -1,0 +1,387 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    color: white;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./images/headerimagge.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 3% 3% 3%;
+    z-index: 10;
+}
+
+.navbar-netflix {
+    height: 100%;
+    width: 148px;
+}
+
+.navbar-nav-items {
+    display: flex;
+    gap: 10px;
+}
+
+.netfli-logo {
+    width: 100%;
+    height: 100%;
+}
+
+.language-drop-down {
+    background: transparent;
+    border: none;
+    color: white;
+}
+
+.dropdown-container {
+    border: 1px solid #535352;
+    padding: 0.4rem;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.sign-in-button {
+    border: #E50914;
+    background-color: #E50914;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    height: 35px;
+    width: 100px;
+}
+
+button:hover {
+    background-color: rgb(193, 17, 25);
+}
+
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 100px;
+}
+
+.header-content h1 {
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 600;
+    max-width: 650px;
+}
+
+.header-content h3 {
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.email-signup {
+    background: white;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.email-signup input {
+    flex: 1;
+    border: 0;
+    outline: 0;
+    margin-left: 20px;
+}
+
+.email-signup button {
+    background: red;
+    border: 0;
+    outline: 0;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 15px 30px;
+}
+
+.red-line {
+    border: solid rgb(255, 0, 0);
+    height: 2px;
+    margin: 0px 0;
+}
+
+/* movies */
+.movies {
+    padding: 4% 2%;
+}
+
+.movies h1 {
+    margin-bottom: 50px;
+    margin-left: 5%;
+    font-size: xx-large;
+    font-weight: 300;
+}
+
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 30px;
+}
+
+.movie-card {
+    overflow: hidden;
+    border-radius: 5px;
+    height: 310px;
+    width: 200px;
+    margin-left: 10px;
+    padding: 20px;
+
+}
+
+.movie-card img {
+    width: 100%;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+.movie-card img:hover {
+    transform: scale(1.05);
+}
+
+.gray-line {
+    border: solid rgb(101, 87, 87);
+    height: 2px;
+    
+}
+
+.card-1,
+.card-2,
+.card-3 {
+    border-top: 8px rgb(69, 69, 69);
+    padding: 50px;
+}
+
+.card-1 {
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 50% 40%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+}
+
+.desc-1 {
+    padding-left: 80px;
+}
+
+.card-1 video {
+    position: relative;
+    width: 100%;
+    height: 54%;
+    grid-column: 2/2;
+    grid-row: 1/2;
+    z-index: -1;
+}
+
+.card-1 img {
+    grid-column: 2/2;
+    grid-row: 1/2;
+}
+
+.style-cards h1 {
+    font-size: 3rem;
+    padding: 1rem;
+    padding-left: 0;
+}
+
+.style-cards h3 {
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+
+.card-2 {
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 50% 40%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+}
+
+.desc-2 {
+    padding-left: 50%;
+
+}
+
+.card-3 {
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 50% 40%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+}
+
+
+.desc-3 {
+    padding-left: 80px;
+    padding-right: 20px;
+}
+
+.card-3 img {
+    width: 110%;
+    grid-column: 2/2;
+    grid-row: 1/2;
+}
+
+.card-3 video {
+    position: relative;
+    top: -87px;
+    left: 125px;
+    width: 65%;
+    height: 78%;
+    grid-column: 2/2;
+    grid-row: 1/2;
+    z-index: -1;
+}
+.faq {
+    padding: 1opx 12px;
+    text-align: center;
+    font-size: 18px;
+
+}
+
+.faq h2 {
+
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.qst {
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+
+}
+
+.qst li {
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+
+}
+
+.qst li label {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #222121;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+    color: white;
+}
+
+label::after {
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+
+.contents {
+    color: white;
+    background: #272424;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.qst input[type="radio"]:checked+label+.contents {
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.qst input[type="radio"]:checked+label::after {
+    transform: rotate(135deg);
+}
+
+.small1 {
+    color: #fff;
+}
+
+
+
+.faq .email {
+    color: #faf7f7;
+    max-width: 600px;
+    margin: 20px auto 60px;
+    position: relative;
+
+
+}
+
+.faq small {
+    font-size: 20px;
+
+
+}
+.bottomsignup{
+    text-align: center;
+    justify-content: center;
+    width: 60vw;
+    margin: auto;
+}
+
+/* footer */
+.footer{
+    margin-top: 24px;
+}
+
+.footer a {
+    color: #999;
+    font-size: 0.9rem;
+}
+
+.footer p {
+    margin-bottom: 1.5rem;
+    padding-left: 50px;
+}
+
+.footer .footer-cols {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+    padding-left: 50px;
+}
+
+.footer li {
+    line-height: 1.9;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 3rem;
+}
